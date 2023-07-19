@@ -1,0 +1,26 @@
+{
+   "F1_FacilityUser":[
+      {
+         "userName":"david@ajanta.co.in",
+         "passWord":"123456",
+         "site_url":"http://fu1.cw3.biz/#/login"
+      }
+   ],
+   
+    "F1_CompanyAdmin":[
+      {
+         "userName":"david@ajanta.co.in",
+         "passWord":"123456",
+         "site_url":"http://fu1.cw3.biz/#/login"
+      }
+   ],
+   
+   
+   "CW_Admin":[
+      {
+         "userName":"admin@copperwire.io",
+         "passWord":"C0pp3rw1r3",
+         "site_url":"http://fu3.cw3.biz/#/login"
+      }
+   ]
+}

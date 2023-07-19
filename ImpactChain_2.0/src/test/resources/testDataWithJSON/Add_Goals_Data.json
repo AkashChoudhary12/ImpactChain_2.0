@@ -1,0 +1,40 @@
+{
+   "Add_Goals_Data":[
+      {
+         
+         "description":"Description 1",
+         "type":"Geo",
+         "level":"Country",
+         "owner":"Facility",
+         "metric":"300",
+         "target":"400",
+         "targetunit":"mt",
+         "budget":"300",
+         "baselineyear":"2018",
+         "baseline":"300",
+         "basis":"SBTI",
+         "method":"Absolute Contraction Approach"
+      }
+   ],
+   
+      "Add_EnergyGoals_Data":[
+      {
+         
+         "description":"Description 1",
+         "type":"Geo",
+         "level":"Country",
+         "owner":"Facility",
+         "metric":"300",
+         "target":"400",
+         "targetunit":"mt",
+         "budget":"300",
+         "baselineyear":"2018",
+         "baseline":"300",
+         "basis":"SBTI",
+         "method":"Absolute Contraction Approach"
+      }
+   ]
+   
+   
+ 
+}

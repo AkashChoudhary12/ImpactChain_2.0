@@ -1,0 +1,18 @@
+{
+   "CompanyData":[
+      {
+         "companyName":"Continum",
+         "officeAddress":"Yashwant stadium Nagpur",
+         "corporateAddress":"Nagpur",
+         "city":"Nagpur",
+         "state":"Maharashtra",
+         "country":"India",
+         "postalCode":"30023",
+         "phoneNo":"98567438",
+         "mobileNo":"89576352",
+         "CIN":"CIN1234",
+         "yearOfIncorporation":"2018",
+         "emailID":"info"
+      }
+   ]
+}
