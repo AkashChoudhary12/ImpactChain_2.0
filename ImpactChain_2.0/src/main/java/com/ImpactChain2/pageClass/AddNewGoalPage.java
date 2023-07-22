@@ -3,6 +3,7 @@ package com.ImpactChain2.pageClass;
 import java.io.IOException;
 
 import org.json.simple.parser.ParseException;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -21,7 +22,7 @@ public class AddNewGoalPage extends FunctionLibraryESG {
 		PageFactory.initElements(driver, this);
 	}
 
-	// *************************************************
+	// *********************WebElements****************************
 
 	@FindBy(xpath = "//input[@id='name']")
 	WebElement Names;
@@ -67,7 +68,10 @@ public class AddNewGoalPage extends FunctionLibraryESG {
 
 	@FindBy(xpath = "//select[@id='method']")
 	WebElement Method;
-
+	
+	@FindBy(xpath = "//div[@class='vc-title']")
+	WebElement Month;
+	
 	@FindBy(xpath = "//button[@class='button button v-button is-raised is-primary']")
 	WebElement Next;
 
@@ -83,8 +87,6 @@ public class AddNewGoalPage extends FunctionLibraryESG {
 		String metric = (String) getNewGoalJSONData(jsonObjectName).get("metric");
 		String target = (String) getNewGoalJSONData(jsonObjectName).get("target");
 		String targetunit = (String) getNewGoalJSONData(jsonObjectName).get("targetunit");
-//		String startdate = (String) getCompanyJSONData(jsonObjectName).get("startdate");
-//		String enddate = (String) getCompanyJSONData(jsonObjectName).get("enddate");
 		String budget = (String) getNewGoalJSONData(jsonObjectName).get("budget");
 		String baselineyear = (String) getNewGoalJSONData(jsonObjectName).get("baselineyear");
 		String baseline = (String) getNewGoalJSONData(jsonObjectName).get("baseline");
@@ -125,6 +127,17 @@ public class AddNewGoalPage extends FunctionLibraryESG {
 		clickElement(EndDate);
 
 	}
+	
+	public void SelectDate(String monthYear, String date) {
+
+		clickElement(Month);
+		clickElement(By.xpath("//span[@data-id='"+monthYear.trim()+"']"));
+		clickElement(By.xpath("//span[contains(@aria-label,'"+date.trim()+"')]"));
+
+	}
+	
+	
+	
 
 //	public void entername(String names) {
 //

@@ -1,8 +1,5 @@
 package com.ImpactChain2.pageClass;
 
-import java.io.IOException;
-
-import org.json.simple.parser.ParseException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -20,7 +17,7 @@ public class GoalStatisticsPage extends FunctionLibraryESG {
 		PageFactory.initElements(driver, this);
 	}
 
-	// *************************************************
+	// *******************WebElements******************************
 
 	@FindBy(xpath = "//a//div[contains(text(),'Climate')]")
 	WebElement Climate;

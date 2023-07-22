@@ -1,8 +1,5 @@
 package com.ImpactChain2.pageClass;
 
-import java.io.IOException;
-
-import org.json.simple.parser.ParseException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -47,15 +44,9 @@ public class GoalsPage extends FunctionLibraryESG {
 	public void clickClimate() {
 		clickElement(Climate);
 	}
-	
+
 	public void clickAddNewGoal() {
 		clickElement(Add_New_Goal);
 	}
-	
-	
-	
-	
-	
-	
 
 }

@@ -46,15 +46,8 @@ public class TestBase extends LogUtil {
 	protected GoalsPage goalsPage;
 	protected AddNewGoalPage addnewgoalpage;
 	protected GoalStatisticsPage goalstatisticsPage;
-	 
-
 	protected ClimateGoalListPage climategoallistpage;
-//	protected DashboardPage dashboardPage;
-//	protected addCompanyDataPage addcompanydataPage;
-//	protected companyPage companypage;
-//	protected ClimatePage climatePage;
-//	protected addDR_DataPage addDRPage;
-//	protected FileUpload fileUpload;
+
 
 	public TestBase() {
 		try {
@@ -157,8 +150,6 @@ public class TestBase extends LogUtil {
 		driver.findElement(By.xpath("//span[text()='" + exDay.trim() + "']")).click();
 
 	}
-	
-	
 	
 	
 	

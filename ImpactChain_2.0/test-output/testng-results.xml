@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-19T18:38:57 IST" name="Default suite" finished-at="2023-07-19T18:39:21 IST" duration-ms="23928">
+  <suite started-at="2023-07-22T09:43:01 IST" name="Suite" finished-at="2023-07-22T09:45:44 IST" duration-ms="162796">
     <groups>
     </groups>
-    <test started-at="2023-07-19T18:38:57 IST" name="Default test" finished-at="2023-07-19T18:39:21 IST" duration-ms="23928">
-      <class name="com.ImpactChain2.testcases.AddClimateGoalTest">
-        <test-method is-config="true" signature="initialization(java.lang.String)[pri:0, instance:com.ImpactChain2.testcases.AddClimateGoalTest@7876d598]" started-at="2023-07-19T18:38:57 IST" name="initialization" finished-at="2023-07-19T18:39:01 IST" duration-ms="4136" status="PASS">
+    <test started-at="2023-07-22T09:43:01 IST" name="Test" finished-at="2023-07-22T09:45:44 IST" duration-ms="162796">
+      <class name="com.ImpactChain2.testcases.AddGoalTest">
+        <test-method is-config="true" signature="initialization(java.lang.String)[pri:0, instance:com.ImpactChain2.testcases.AddGoalTest@5af28b27]" started-at="2023-07-22T09:43:01 IST" name="initialization" finished-at="2023-07-22T09:43:04 IST" duration-ms="2210" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,116 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialization -->
-        <test-method signature="verify_Add_New_Energy_Goal()[pri:0, instance:com.ImpactChain2.testcases.AddClimateGoalTest@7876d598]" started-at="2023-07-19T18:39:01 IST" name="verify_Add_New_Energy_Goal" description="Verify_Add_New_Energy_Goal" finished-at="2023-07-19T18:39:21 IST" duration-ms="19678" status="PASS">
+        <test-method signature="verify_Add_New_Climate_Goal()[pri:0, instance:com.ImpactChain2.testcases.AddGoalTest@5af28b27]" started-at="2023-07-22T09:43:04 IST" name="verify_Add_New_Climate_Goal" description="Verify Add New Climate Goal" finished-at="2023-07-22T09:43:24 IST" duration-ms="20140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Add_New_Climate_Goal -->
+        <test-method is-config="true" signature="initialization(java.lang.String)[pri:0, instance:com.ImpactChain2.testcases.AddGoalTest@5af28b27]" started-at="2023-07-22T09:43:24 IST" name="initialization" finished-at="2023-07-22T09:43:25 IST" duration-ms="1186" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method signature="verify_Add_New_Diversity_and_Inclusion_Goal()[pri:0, instance:com.ImpactChain2.testcases.AddGoalTest@5af28b27]" started-at="2023-07-22T09:43:25 IST" name="verify_Add_New_Diversity_and_Inclusion_Goal" description="Verify Add New Diversity and Inclusion Labor Goal" finished-at="2023-07-22T09:43:43 IST" duration-ms="18093" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Add_New_Diversity_and_Inclusion_Goal -->
+        <test-method is-config="true" signature="initialization(java.lang.String)[pri:0, instance:com.ImpactChain2.testcases.AddGoalTest@5af28b27]" started-at="2023-07-22T09:43:43 IST" name="initialization" finished-at="2023-07-22T09:43:45 IST" duration-ms="1183" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method signature="verify_Add_New_Energy_Goal()[pri:0, instance:com.ImpactChain2.testcases.AddGoalTest@5af28b27]" started-at="2023-07-22T09:43:45 IST" name="verify_Add_New_Energy_Goal" description="Verify Add New Energy Goal" finished-at="2023-07-22T09:44:03 IST" duration-ms="18442" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_Add_New_Energy_Goal -->
-      </class> <!-- com.ImpactChain2.testcases.AddClimateGoalTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        <test-method is-config="true" signature="initialization(java.lang.String)[pri:0, instance:com.ImpactChain2.testcases.AddGoalTest@5af28b27]" started-at="2023-07-22T09:44:03 IST" name="initialization" finished-at="2023-07-22T09:44:05 IST" duration-ms="1256" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method signature="verify_Add_New_Ethical_Behaviour_Goal()[pri:0, instance:com.ImpactChain2.testcases.AddGoalTest@5af28b27]" started-at="2023-07-22T09:44:05 IST" name="verify_Add_New_Ethical_Behaviour_Goal" description="Verify Add New Ethical Behaviour Labor Goal" finished-at="2023-07-22T09:44:23 IST" duration-ms="18168" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Add_New_Ethical_Behaviour_Goal -->
+        <test-method is-config="true" signature="initialization(java.lang.String)[pri:0, instance:com.ImpactChain2.testcases.AddGoalTest@5af28b27]" started-at="2023-07-22T09:44:23 IST" name="initialization" finished-at="2023-07-22T09:44:24 IST" duration-ms="1205" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method signature="verify_Add_New_FreshWater_Goal()[pri:0, instance:com.ImpactChain2.testcases.AddGoalTest@5af28b27]" started-at="2023-07-22T09:44:24 IST" name="verify_Add_New_FreshWater_Goal" description="Verify Add New FreshWater Goal" finished-at="2023-07-22T09:44:42 IST" duration-ms="17700" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Add_New_FreshWater_Goal -->
+        <test-method is-config="true" signature="initialization(java.lang.String)[pri:0, instance:com.ImpactChain2.testcases.AddGoalTest@5af28b27]" started-at="2023-07-22T09:44:42 IST" name="initialization" finished-at="2023-07-22T09:44:43 IST" duration-ms="1211" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method signature="verify_Add_New_Involuntary_Labor_Goal()[pri:0, instance:com.ImpactChain2.testcases.AddGoalTest@5af28b27]" started-at="2023-07-22T09:44:43 IST" name="verify_Add_New_Involuntary_Labor_Goal" description="Verify Add New Involuntary Labor Goal" finished-at="2023-07-22T09:45:03 IST" duration-ms="19861" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Add_New_Involuntary_Labor_Goal -->
+        <test-method is-config="true" signature="initialization(java.lang.String)[pri:0, instance:com.ImpactChain2.testcases.AddGoalTest@5af28b27]" started-at="2023-07-22T09:45:04 IST" name="initialization" finished-at="2023-07-22T09:45:05 IST" duration-ms="1187" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method signature="verify_Add_New_Pay_Equaility_Goal()[pri:0, instance:com.ImpactChain2.testcases.AddGoalTest@5af28b27]" started-at="2023-07-22T09:45:05 IST" name="verify_Add_New_Pay_Equaility_Goal" description="Verify Add New Pay Equaility Labor Goal" finished-at="2023-07-22T09:45:24 IST" duration-ms="19396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Add_New_Pay_Equaility_Goal -->
+        <test-method is-config="true" signature="initialization(java.lang.String)[pri:0, instance:com.ImpactChain2.testcases.AddGoalTest@5af28b27]" started-at="2023-07-22T09:45:24 IST" name="initialization" finished-at="2023-07-22T09:45:26 IST" duration-ms="1194" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialization -->
+        <test-method signature="verify_Add_New_Waste_Goal()[pri:0, instance:com.ImpactChain2.testcases.AddGoalTest@5af28b27]" started-at="2023-07-22T09:45:26 IST" name="verify_Add_New_Waste_Goal" description="Verify Add New Waste Goal" finished-at="2023-07-22T09:45:44 IST" duration-ms="17957" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_Add_New_Waste_Goal -->
+      </class> <!-- com.ImpactChain2.testcases.AddGoalTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

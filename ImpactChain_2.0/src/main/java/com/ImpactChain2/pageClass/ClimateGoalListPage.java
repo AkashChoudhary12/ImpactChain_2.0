@@ -16,12 +16,9 @@ public class ClimateGoalListPage extends FunctionLibraryESG {
 		PageFactory.initElements(driver, this);
 	}
 
-	// *************************************************
+	// *****************WebElements********************************
 
-//	@FindBy(xpath = "//td[normalize-space()='Description 1']")
-//	WebElement GoalName;
 
-	// table/tbody/tr[*]/td[2][text()='Climate Goal 1']
 
 	// ***********************Actions*********************
 

@@ -22,7 +22,7 @@ public class LoginPage extends FunctionLibraryESG {
 		PageFactory.initElements(driver, this);
 	}
 
-	//*************************************************
+	//*******************WebElements******************************
 
 	@FindBy(xpath = "//input[@id='email']")
 	WebElement username;
@@ -33,8 +33,6 @@ public class LoginPage extends FunctionLibraryESG {
 	@FindBy(xpath = "//button[@type='submit']")
 	WebElement loginBtn;
 
-	
-//
 //	@FindBy(xpath = "//span[normalize-space()='Forgot Password']")
 //	WebElement forgotPasswordBtn;
 
@@ -61,6 +59,8 @@ public class LoginPage extends FunctionLibraryESG {
 		info("Successfully logged in ");
 	}
 
+	
+	//Action verify login 
 	public void verifyLoginText() {
 
 		verify(getText(loginBtn), "Sign In");
