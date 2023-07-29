@@ -17,16 +17,18 @@ public class ClimateGoalListPage extends FunctionLibraryESG {
 	}
 
 	// *****************WebElements********************************
-
-
+	
+	
+	
+	
+	
+	
+	
 
 	// ***********************Actions*********************
 
-	public void verifyCLimateGoal(String expectedgoalname) {
+	
 
-		String GoalName = getText(By.xpath("//table/tbody/tr[*]/td[2][text()='" + expectedgoalname + "']"));
-		verify(expectedgoalname.trim(), GoalName.trim());
 
-	}
 
 }

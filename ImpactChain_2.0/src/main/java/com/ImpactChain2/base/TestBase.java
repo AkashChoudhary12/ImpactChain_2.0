@@ -28,9 +28,12 @@ import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import com.ImpactChain2.pageClass.AddNewGoalPage;
+import com.ImpactChain2.pageClass.AddSubGoalPage;
 import com.ImpactChain2.pageClass.ClimateGoalListPage;
+import com.ImpactChain2.pageClass.GoalSettingPage;
 import com.ImpactChain2.pageClass.GoalStatisticsPage;
 import com.ImpactChain2.pageClass.GoalsPage;
+import com.ImpactChain2.pageClass.HomePage;
 import com.ImpactChain2.pageClass.LoginPage;
 import com.ImpactChain2.utils.LogUtil;
 
@@ -47,6 +50,9 @@ public class TestBase extends LogUtil {
 	protected AddNewGoalPage addnewgoalpage;
 	protected GoalStatisticsPage goalstatisticsPage;
 	protected ClimateGoalListPage climategoallistpage;
+	protected HomePage homepage;
+	protected GoalSettingPage goalsettingpage;
+	protected AddSubGoalPage addsubgoalpage;
 
 
 	public TestBase() {

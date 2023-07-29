@@ -1,5 +1,6 @@
 package com.ImpactChain2.pageClass;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -30,6 +31,9 @@ public class GoalsPage extends FunctionLibraryESG {
 
 	@FindBy(xpath = "//a//div[contains(text(),\"Climate\")]")
 	WebElement Climate;
+	
+	
+	
 
 	// ***********************Actions*********************
 
@@ -47,6 +51,12 @@ public class GoalsPage extends FunctionLibraryESG {
 
 	public void clickAddNewGoal() {
 		clickElement(Add_New_Goal);
+	}
+
+	public void ClickOnID(String ID) {
+
+		clickElement(By.xpath("//table/tbody/tr[*]/td[2][text()='" + ID.trim() + "']/preceding-sibling::td/div"));
+
 	}
 
 }

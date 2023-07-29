@@ -1,5 +1,5 @@
 {
-   "F1_FacilityUser":[
+   "F1_FacilityUser_ValidCredential":[
       {
          "userName":"david@ajanta.co.in",
          "passWord":"123456",
@@ -7,7 +7,15 @@
       }
    ],
    
-    "F1_CompanyAdmin":[
+   "F1_FacilityUser_InValidCredential":[
+      {
+         "userName":"david@ajanta.co.in",
+         "passWord":"12345",
+         "site_url":"http://fu1.cw3.biz/#/login"
+      }
+   ],
+   
+    "F1_CompanyAdmin_validCredential":[
       {
          "userName":"david@ajanta.co.in",
          "passWord":"123456",
@@ -15,6 +23,13 @@
       }
    ],
    
+   "F1_CompanyAdmin_InvalidCredential":[
+      {
+         "userName":"david@ajanta.co.in",
+         "passWord":"12345",
+         "site_url":"http://fu1.cw3.biz/#/login"
+      }
+   ],
    
    "CW_Admin":[
       {

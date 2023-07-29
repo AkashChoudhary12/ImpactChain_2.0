@@ -30,11 +30,11 @@ public class LoginPage extends FunctionLibraryESG {
 	@FindBy(xpath = "//input[@id='password']")
 	WebElement password;
 
-	@FindBy(xpath = "//button[@type='submit']")
-	WebElement loginBtn;
+	@FindBy(xpath = "//span[normalize-space()='Sign In']")
+	WebElement SignInBtn;
 
-//	@FindBy(xpath = "//span[normalize-space()='Forgot Password']")
-//	WebElement forgotPasswordBtn;
+	@FindBy(xpath = "//div[@class='notyf__message']")
+	WebElement errorMsg;
 
 	//***********************Actions*********************	
 
@@ -55,7 +55,7 @@ public class LoginPage extends FunctionLibraryESG {
 		sendInput(username, userName);
 		sendInput(password, passWord);
 
-		clickElement(loginBtn);
+		clickElement(SignInBtn);
 		info("Successfully logged in ");
 	}
 
@@ -63,8 +63,25 @@ public class LoginPage extends FunctionLibraryESG {
 	//Action verify login 
 	public void verifyLoginText() {
 
-		verify(getText(loginBtn), "Sign In");
+		verify(getText(SignInBtn), "Sign In");
 		info("logged out successfully");
 	}
+	
+	
+	public void verifyErrorMsg() {
+
+		verify(getText(errorMsg),"Incorrect Email or Password.");
+		info("error msg is verified");
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
 
 }

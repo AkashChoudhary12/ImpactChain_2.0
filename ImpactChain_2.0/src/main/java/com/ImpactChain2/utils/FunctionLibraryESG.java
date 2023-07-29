@@ -25,6 +25,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.python.antlr.ast.While;
 import org.testng.Assert;
 
 public class FunctionLibraryESG extends LogUtil {
@@ -53,6 +54,7 @@ public class FunctionLibraryESG extends LogUtil {
 
 	protected WebElement sendInput(By locator, String input) {
 		WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
+
 		scrollToElement(element);
 		HighlightElement(element);
 		element.sendKeys(Keys.CONTROL + "a" + Keys.BACK_SPACE);
@@ -108,9 +110,7 @@ public class FunctionLibraryESG extends LogUtil {
 		return element.getText().trim();
 
 	}
-	
-	
-	
+
 	protected String getText(By locator) {
 		WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
 		scrollToElement(element);
@@ -119,14 +119,6 @@ public class FunctionLibraryESG extends LogUtil {
 		return element.getText().trim();
 
 	}
-	
-	
-	
-	
-	
-	
-	
-	
 
 	protected String getAttribute(WebElement locator, String attribute) {
 		WebElement element = wait.until(ExpectedConditions.visibilityOf(locator));
@@ -235,9 +227,7 @@ public class FunctionLibraryESG extends LogUtil {
 
 		return (JSONObject) jarray1.get(0);
 	}
-	
-	
-	
+
 	protected JSONObject getNewGoalJSONData(String objectName) throws IOException, ParseException {
 		JSONParser jsonparser = new JSONParser();
 		FileReader reader = new FileReader(".\\src\\test\\resources\\testDataWithJSON\\Add_Goals_Data.json");
@@ -250,21 +240,6 @@ public class FunctionLibraryESG extends LogUtil {
 
 		return (JSONObject) jarray1.get(0);
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
 	protected String generateCommonLangPassword(int length) {
 		String upperCaseLetters = RandomStringUtils.random(2, 65, 90, true, true);
@@ -281,8 +256,22 @@ public class FunctionLibraryESG extends LogUtil {
 		return password;
 	}
 
+	protected void pause(long timeInMillis) {
+		try {
+			Thread.sleep(timeInMillis);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
 
-	
-
+	protected String getFieldText(By locator) {
+		WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+		scrollToElement(element);
+		HighlightElement(element);
+		pause(5000);
+		return jse.executeScript("return arguments[0].lastChild.textContent;",
+				wait.until(ExpectedConditions.visibilityOfElementLocated(locator))).toString().trim();
+	}
 
 }

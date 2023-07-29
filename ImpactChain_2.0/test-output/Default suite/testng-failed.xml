@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.ImpactChain2.testcases.AddClimateGoalTest">
+      <class name="com.ImpactChain2.testcases.AddSubGoalTest">
         <methods>
           <include name="initialization"/>
           <include name="verify_Add_New_Climate_Goal"/>
         </methods>
-      </class> <!-- com.ImpactChain2.testcases.AddClimateGoalTest -->
+      </class> <!-- com.ImpactChain2.testcases.AddSubGoalTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
